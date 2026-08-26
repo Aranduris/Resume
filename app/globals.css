@@ -103,7 +103,7 @@ body::before {
 }
 .brand-copy em {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-style: normal;
 }
 .main-nav {
@@ -161,7 +161,7 @@ body::before {
   margin: 0 0 32px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 }
 .eyebrow {
@@ -254,7 +254,7 @@ body::before {
 .current-role small,
 .current-role time {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -298,7 +298,7 @@ body::before {
   margin-bottom: 7px;
   color: var(--blue);
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -344,7 +344,7 @@ body::before {
 .proof-strip span {
   max-width: 150px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -416,7 +416,7 @@ body::before {
   justify-content: space-between;
   padding: 18px 20px;
   border-bottom: 1px solid rgba(20, 33, 30, 0.22);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -449,7 +449,7 @@ body::before {
 .project-body > p {
   min-height: 132px;
   margin: 18px 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .project-body ul {
@@ -466,7 +466,7 @@ body::before {
   padding: 6px 9px;
   border: 1px solid rgba(20, 33, 30, 0.3);
   border-radius: 99px;
-  font-size: 10px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -478,7 +478,7 @@ body::before {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .project-note a {
@@ -486,7 +486,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -498,6 +498,7 @@ body::before {
 .repository-section {
   padding: 120px max(24px, calc((100vw - 1440px) / 2));
   background: var(--white);
+  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 .repository-heading {
@@ -554,7 +555,7 @@ body::before {
   justify-content: space-between;
   gap: 20px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -590,7 +591,7 @@ body::before {
   padding: 6px 9px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 14px;
 }
 .repository-card > a {
   width: max-content;
@@ -600,7 +601,7 @@ body::before {
   gap: 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--ink);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -611,7 +612,7 @@ body::before {
 }
 .first-footer p {
   margin: 0 0 20px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -667,7 +668,7 @@ body::before {
 .story-label p {
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -718,7 +719,7 @@ body::before {
 }
 .principles span {
   color: var(--blue);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -733,7 +734,7 @@ body::before {
   max-width: 260px;
   margin: 0;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -783,7 +784,7 @@ body::before {
   padding: 13px 0;
   color: var(--muted);
   border-bottom: 1px solid var(--line);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -804,7 +805,7 @@ body::before {
 }
 .ledger-row small {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -820,7 +821,7 @@ body::before {
 .ledger-row p {
   margin: 9px 0 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
 }
 .ledger-row > div:last-child {
   display: flex;
@@ -829,7 +830,7 @@ body::before {
   gap: 14px;
 }
 .ledger-row > div:last-child > span {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -873,56 +874,25 @@ body::before {
 }
 .conference-heading {
   display: grid;
-  grid-template-columns: 0.65fr 1.35fr;
-  gap: 6vw;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.55fr);
+  column-gap: 8vw;
+  align-items: end;
   margin-bottom: 46px;
 }
+.conference-heading .kicker {
+  grid-column: 1 / -1;
+}
 .conference-heading h3 {
+  grid-column: 1;
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(40px, 4.8vw, 68px);
+  font-size: clamp(48px, 5.8vw, 84px);
   font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.04em;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
 }
-.conference-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--ink);
-  border-left: 1px solid var(--line);
-}
-.conference-grid article {
-  min-height: 250px;
-  padding: 26px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-content: start;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.conference-grid article > span,
-.conference-grid time {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-.conference-grid h4 {
-  grid-column: 1 / -1;
-  margin: 48px 0 14px;
-  font-family: var(--display);
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.14;
-  letter-spacing: -0.025em;
-}
-.conference-grid p {
-  grid-column: 1 / -1;
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.5;
+.conference-ledger .ledger-row:last-child {
+  border-bottom-color: var(--ink);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -973,7 +943,7 @@ body::before {
 .timeline-meta small {
   max-width: 250px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -981,7 +951,7 @@ body::before {
 .timeline-copy > p {
   margin: 0 0 14px;
   color: var(--blue);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1008,7 +978,7 @@ body::before {
   padding: 9px 0 9px 23px;
   position: relative;
   color: #44504c;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
 }
 .timeline-copy li::before {
@@ -1059,13 +1029,13 @@ body::before {
 .education-grid p {
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.45;
 }
 .education-grid strong {
   grid-column: 2;
   align-self: end;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
@@ -1109,67 +1079,30 @@ body::before {
   border-top: 1px solid rgba(243, 240, 231, 0.5);
 }
 .stack-list article {
-  min-height: 220px;
+  min-height: 158px;
   display: grid;
-  grid-template-columns: 46px minmax(220px, 0.78fr) minmax(280px, 1.22fr);
+  grid-template-columns: 46px minmax(240px, 0.9fr) minmax(280px, 1.1fr);
   gap: 24px;
   align-items: center;
   border-bottom: 1px solid rgba(243, 240, 231, 0.18);
 }
 .stack-list span {
   color: #8c9792;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.1em;
 }
-.skill-summary h3 {
+.stack-list h3 {
   margin: 0;
   font-family: var(--display);
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1.12;
 }
-.skill-summary p {
-  margin: 15px 0 0;
+.stack-list p {
+  margin: 0;
   color: #b3bcb8;
-  font-size: 14px;
-  line-height: 1.65;
-}
-.skill-evidence {
-  display: grid;
-  gap: 8px;
-}
-.skill-evidence a {
-  min-height: 70px;
-  padding: 12px 14px;
-  display: grid;
-  grid-template-columns: 88px 1fr auto;
-  gap: 12px;
-  align-items: center;
-  border: 1px solid rgba(243, 240, 231, 0.2);
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-.skill-evidence a:hover,
-.skill-evidence a:focus-visible {
-  background: rgba(243, 240, 231, 0.07);
-  border-color: rgba(243, 240, 231, 0.48);
-}
-.skill-evidence small {
-  color: #8c9792;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.skill-evidence strong {
-  color: #d7ddd9;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-.skill-evidence svg {
-  width: 16px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 /* -------------------------------------------------------------------------- */
 /* Contact                                                                    */
@@ -1185,14 +1118,14 @@ body::before {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .contact-section > p {
   margin: 84px 0 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1234,7 +1167,7 @@ body::before {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   border-top: 1px solid rgba(255, 255, 255, 0.35);
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1336,7 +1269,6 @@ body::before {
   }
   .conference-heading {
     grid-template-columns: 1fr;
-    gap: 12px;
   }
   .timeline > article {
     grid-template-columns: 0.6fr 1.4fr;
@@ -1378,7 +1310,7 @@ body::before {
     display: none;
   }
   .header-contact {
-    font-size: 13px;
+    font-size: 14px;
   }
   .hero-copy {
     min-height: auto;
@@ -1526,7 +1458,7 @@ body::before {
     justify-content: flex-start;
   }
   .ledger-row h3 {
-    font-size: 20px;
+    font-size: 23px;
   }
   .ledger-row > div:first-child strong {
     font-size: 26px;
@@ -1536,17 +1468,7 @@ body::before {
     padding-top: 54px;
   }
   .conference-heading h3 {
-    font-size: 43px;
-  }
-  .conference-grid {
-    grid-template-columns: 1fr;
-  }
-  .conference-grid article {
-    min-height: 220px;
-  }
-  .conference-grid h4 {
-    margin-top: 38px;
-    font-size: 28px;
+    font-size: 51px;
   }
   .experience-title {
     grid-template-columns: 1fr;
@@ -1584,15 +1506,12 @@ body::before {
     grid-template-columns: 34px 1fr;
     align-content: center;
   }
-  .skill-summary {
+  .stack-list h3,
+  .stack-list p {
     grid-column: 2;
   }
-  .skill-evidence {
-    grid-column: 1 / -1;
-    margin-top: 10px;
-  }
-  .skill-evidence a {
-    grid-template-columns: 76px 1fr auto;
+  .stack-list p {
+    margin-top: 12px;
   }
   .contact-section {
     padding-top: 26px;
