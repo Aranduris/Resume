@@ -12,6 +12,7 @@ import {
   repositoryProjects,
   skillGroups,
   submittedManuscripts,
+  type PresentationEntry,
   type Project,
   type RepositoryProject,
   type ResearchEntry,
@@ -116,6 +117,26 @@ function ResearchRow({ entry }: { entry: ResearchEntry }) {
   );
 }
 
+function ConferenceRow({ entry }: { entry: PresentationEntry }) {
+  return (
+    <article className="ledger-row">
+      <div>
+        <strong>{entry.year}</strong>
+        <small>Conference</small>
+      </div>
+
+      <div>
+        <h3>{entry.title}</h3>
+        <p>{entry.venue}</p>
+      </div>
+
+      <div>
+        <span>{entry.role ?? "Presentation"}</span>
+      </div>
+    </article>
+  );
+}
+
 export default function Home() {
   const [showAllResearch, setShowAllResearch] = useState(false);
 
@@ -144,9 +165,9 @@ export default function Home() {
 
         <nav className="main-nav" aria-label="Primary navigation">
           <a href="#work">Healthcare work</a>
-          <a href="#projects">Projects</a>
           <a href="#research">Research</a>
-          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
         </nav>
 
         <a className="header-contact" href="#contact">
@@ -227,9 +248,7 @@ export default function Home() {
           <strong>03</strong>
           <span>clinical data domains: records, text, and imaging</span>
         </div>
-        <p>
-          Each technical skill is linked to work that shows where I used it.
-        </p>
+        <p>Research, conference work, and public projects are listed below.</p>
       </section>
 
       {/* ------------------------------------------------------------------ */}
@@ -252,35 +271,6 @@ export default function Home() {
         <div className="project-grid">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.number} />
-          ))}
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------------ */}
-      {/* Public GitHub projects */}
-      {/* ------------------------------------------------------------------ */}
-
-      <section className="repository-section" id="projects">
-        <div className="repository-heading">
-          <div>
-            <p className="kicker">Public GitHub projects / multidomain work</p>
-            <h2>Projects across biology, environment, sports, and networks.</h2>
-          </div>
-          <div>
-            <p>
-              This work shows how I apply the same analytical foundation across
-              different domains. The repository includes code, notebooks,
-              reports, and presentations.
-            </p>
-            <a href={projectRepositoryUrl} target="_blank" rel="noreferrer">
-              Open complete project repository <ExternalIcon />
-            </a>
-          </div>
-        </div>
-
-        <div className="repository-grid">
-          {repositoryProjects.map((project) => (
-            <RepositoryProjectCard project={project} key={project.number} />
           ))}
         </div>
       </section>
@@ -380,20 +370,47 @@ export default function Home() {
             <p className="kicker">Conference record / 2024—2026</p>
             <h3>Eight presentations and panel contributions.</h3>
           </div>
-          <div className="conference-grid">
-            {presentations.map((presentation, index) => (
-              <article key={presentation.title}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <time>{presentation.year}</time>
-                <h4>{presentation.title}</h4>
-                <p>
-                  {presentation.venue}
-                  {presentation.role && ` · ${presentation.role}`}
-                </p>
-              </article>
+          <div className="research-ledger conference-ledger">
+            <div className="ledger-head">
+              <span>Year / type</span>
+              <span>Conference presentation</span>
+              <span>Contribution</span>
+            </div>
+
+            {presentations.map((presentation) => (
+              <ConferenceRow entry={presentation} key={presentation.title} />
             ))}
           </div>
         </section>
+      </section>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* Public GitHub projects */}
+      {/* ------------------------------------------------------------------ */}
+
+      <section className="repository-section" id="projects">
+        <div className="repository-heading">
+          <div>
+            <p className="kicker">Public GitHub projects / multidomain work</p>
+            <h2>Projects across biology, environment, sports, and networks.</h2>
+          </div>
+          <div>
+            <p>
+              This work shows how I apply the same analytical foundation across
+              different domains. The repository includes code, notebooks,
+              reports, and presentations.
+            </p>
+            <a href={projectRepositoryUrl} target="_blank" rel="noreferrer">
+              Open complete project repository <ExternalIcon />
+            </a>
+          </div>
+        </div>
+
+        <div className="repository-grid">
+          {repositoryProjects.map((project) => (
+            <RepositoryProjectCard project={project} key={project.number} />
+          ))}
+        </div>
       </section>
 
       {/* ------------------------------------------------------------------ */}
@@ -485,17 +502,21 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------------ */}
-      {/* Evidence-backed technical skills */}
+      {/* Technical stack */}
       {/* ------------------------------------------------------------------ */}
 
-      <section className="stack-section" id="skills">
+      <section className="stack-section" id="stack">
         <div className="stack-heading">
-          <p className="kicker">Technical skills and supporting work</p>
-          <h2>Skills with a demonstrated application.</h2>
+          <p className="kicker">Technical range</p>
+          <h2>
+            The stack follows
+            <br />
+            the problem.
+          </h2>
           <p>
-            Each skill group includes selected work where I used the methods or
-            tools. Links open the related paper, manuscript, presentation, or
-            public project.
+            From distributed data work to model development and delivery—the
+            point is not collecting tools. It is knowing where each one earns
+            its keep.
           </p>
         </div>
 
@@ -503,31 +524,8 @@ export default function Home() {
           {skillGroups.map((group) => (
             <article key={group.index}>
               <span>{group.index}</span>
-              <div className="skill-summary">
-                <h3>{group.title}</h3>
-                <p>{group.detail}</p>
-              </div>
-              <div
-                className="skill-evidence"
-                aria-label={`${group.title} evidence`}
-              >
-                {group.evidence.map((reference) => {
-                  const isExternal = reference.href.startsWith("http");
-
-                  return (
-                    <a
-                      href={reference.href}
-                      target={isExternal ? "_blank" : undefined}
-                      rel={isExternal ? "noreferrer" : undefined}
-                      key={`${reference.kind}-${reference.label}`}
-                    >
-                      <small>{reference.kind}</small>
-                      <strong>{reference.label}</strong>
-                      {isExternal ? <ExternalIcon /> : <ArrowIcon />}
-                    </a>
-                  );
-                })}
-              </div>
+              <h3>{group.title}</h3>
+              <p>{group.detail}</p>
             </article>
           ))}
         </div>
