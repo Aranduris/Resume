@@ -166,6 +166,15 @@ export const repositoryProjects: RepositoryProject[] = [
 export const publications: ResearchEntry[] = [
   {
     year: "2026",
+    status: "Published",
+    role: "Co-author",
+    title:
+      "Developing, testing, and validating a clinical decision support tool to improve dental radiograph quality",
+    venue: "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
+    href: "https://doi.org/10.1016/j.oooo.2026.08.018"
+  },
+  {
+    year: "2026",
     status: "In press",
     role: "Co-author",
     title:
@@ -179,15 +188,6 @@ export const publications: ResearchEntry[] = [
     title:
       "The association of social determinants of health with dental care use and expenditures among older adults in the United States",
     venue: "Frontiers in Oral Health",
-  },
-  {
-    year: "2026",
-    status: "Published",
-    role: "Acknowledged",
-    title:
-      "Current adoption of the prosthodontic diagnostic index for clinical care",
-    venue: "Journal of Prosthodontics",
-    href: "https://doi.org/10.1111/jopr.70154",
   },
   {
     year: "2025",
@@ -246,14 +246,6 @@ export const publications: ResearchEntry[] = [
 ];
 
 export const submittedManuscripts: ResearchEntry[] = [
-  {
-    year: "2026",
-    status: "Major revision",
-    role: "Co-author",
-    title:
-      "Developing, testing, and validating a clinical decision support system to improve dental radiograph quality",
-    venue: "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
-  },
   {
     year: "2026",
     status: "Submitted",
